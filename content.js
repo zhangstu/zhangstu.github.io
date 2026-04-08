@@ -34,11 +34,7 @@ const siteContent = {
       label: "Publications",
       href: "#publications"
     },
-    {
-      label: "GitHub",
-      href: "https://github.com/",
-      external: true
-    }
+
   ],
   education: [
     {
@@ -117,6 +113,7 @@ const siteContent = {
         venue: "ACM BuildSys 2024",
         title: "CarbonReveal: Embodied Carbon Accounting with Retrieval-Augmented LLM for Computer Systems",
         authors: "Xiaoyang Zhang et al.",
+        note: "Accepted"
       },
       {
         venue: "ACM e-Energy 2024",
