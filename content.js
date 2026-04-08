@@ -1,7 +1,7 @@
 const siteContent = {
   profile: {
     name: "Xiaoyang Zhang",
-    position: "Postdoctoral Researcher / PhD Candidate",
+    position: "Postdoctoral Researcher",
     affiliation: "Department of Computing, The Hong Kong Polytechnic University",
     address: "Hung Hom, Kowloon, Hong Kong",
     photo: "./avatar.svg",
@@ -22,16 +22,8 @@ const siteContent = {
       label: "E-mail",
       value: "xiaoyang.zhang@connect.polyu.hk",
       href: "mailto:xiaoyang.zhang@connect.polyu.hk"
-    },
-    {
-      label: "Phone",
-      value: "(852) 54318280",
-      href: "tel:+85254318280"
-    },
-    {
-      label: "WeChat",
-      value: "stupolito"
     }
+
   ],
   links: [
     {
@@ -52,22 +44,18 @@ const siteContent = {
     {
       degree: "PhD in Computing",
       school: "The Hong Kong Polytechnic University",
-      meta: "Department of Computing, 2021.09 - 2026.01"
+      meta: "Department of Computing, 2026"
     },
     {
       degree: "Master Studies in Communication and Computer Networks",
       school: "Polytechnic University of Turin, Italy",
-      meta: "2016 - 2018, GPA: 91"
+      meta: "2019"
     },
-    {
-      degree: "Master Studies in Electrical Engineering",
-      school: "Xi'an Jiaotong University, China",
-      meta: "2015 - 2016"
-    },
+
     {
       degree: "Bachelor in Optical Information Science and Technology",
       school: "Xi'an Jiaotong University, China",
-      meta: "2011 - 2015, GPA: 84.43, Top 20%"
+      meta: "2015"
     }
   ],
   experience: [
@@ -77,7 +65,7 @@ const siteContent = {
       meta: "Department of Computing, 2026.02 - 2026.05"
     },
     {
-      title: "Algorithm Engineer Consultant",
+      title: "Algorithm Engineer",
       organization: "Huawei Technologies Co., Ltd., Shanghai, China",
       meta: "Communication Protocol Technology Department, 2019 - 2020"
     },
@@ -90,9 +78,7 @@ const siteContent = {
   researchInterests: [
     "Green Computing",
     "Carbon-efficient Computing",
-    "Embodied Carbon Accounting",
-    "Time-series Forecasting",
-    "Foundation Models",
+    "AI for sustainability",
     "Energy-aware AI Systems"
   ],
   publications: {
@@ -106,7 +92,7 @@ const siteContent = {
       {
         venue: "ACM Web Conference 2026",
         title: "Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied Operational Carbon Footprint",
-        authors: "Xiaoyang Zhang and Dan Wang",
+        authors: "Xiaoyang Zhang, Yang Deng, Fang He, and Dan Wang",
         note: "Accepted"
       },
       {
@@ -131,7 +117,6 @@ const siteContent = {
         venue: "ACM BuildSys 2024",
         title: "CarbonReveal: Embodied Carbon Accounting with Retrieval-Augmented LLM for Computer Systems",
         authors: "Xiaoyang Zhang et al.",
-        note: "Proceedings paper"
       },
       {
         venue: "ACM e-Energy 2024",
