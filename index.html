@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic homepage of Xiaoyang Zhang.">
+  <title>Xiaoyang Zhang</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Menu</h2>
+      <nav id="menu-list" class="menu-list"></nav>
+    </aside>
+
+    <main class="content">
+      <header class="page-header" id="home">
+        <h1 id="name"></h1>
+      </header>
+
+      <section class="profile-row">
+        <div class="photo-box">
+          <img id="profile-photo" class="profile-photo" alt="Profile photo">
+        </div>
+        <div class="profile-main">
+          <p class="position-line" id="position-line"></p>
+          <p class="affiliation-line" id="affiliation-line"></p>
+          <p id="address-line"></p>
+          <div id="contact-inline"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h2>About me</h2>
+        <div id="about-paragraphs"></div>
+      </section>
+
+      <section class="section" id="news">
+        <h2>Recent News</h2>
+        <ul id="news-list"></ul>
+      </section>
+
+      <section class="section" id="research">
+        <h2>Research</h2>
+        <h3>Research interests</h3>
+        <ul id="research-list"></ul>
+      </section>
+
+      <section class="section" id="publications">
+        <h2>Recent Publications</h2>
+        <h3>First-author publications</h3>
+        <ol id="first-author-list"></ol>
+        <h3>Co-author publications</h3>
+        <ol id="coauthor-list"></ol>
+      </section>
+
+      <section class="section" id="service">
+        <h2>Academic service</h2>
+        <ul id="service-list"></ul>
+      </section>
+
+      <section class="section" id="experience">
+        <h2>Work experience</h2>
+        <ul id="experience-list"></ul>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <ul id="education-list"></ul>
+      </section>
+
+      <footer class="site-footer">
+        <p>Last updated <span id="last-updated"></span></p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./content.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
