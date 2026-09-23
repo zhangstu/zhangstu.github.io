@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zhangstu.github.io/zhangxiaoyang/sitemap.xml
+Sitemap: https://zhangstu.github.io/sitemap.xml
