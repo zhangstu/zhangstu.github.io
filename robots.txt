@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zhangstu.github.io/zhangxiaoyang/sitemap.xml
