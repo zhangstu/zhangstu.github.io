@@ -1,82 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic homepage of Xiaoyang Zhang.">
-  <title>Xiaoyang Zhang</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <div class="layout">
-    <aside class="sidebar">
-      <h2 class="sidebar-title">Menu</h2>
-      <nav id="menu-list" class="menu-list"></nav>
-    </aside>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Xiaoyang Zhang (Zhang Xiaoyang) is a Research Scientist at Nanyang Technological University (NTU), working on sustainable computing, carbon-efficient computing, and sustainable AI." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://zhangstu.github.io/" />
+    <title>Xiaoyang Zhang | NTU Sustainable Computing</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M8 25 32 14l24 11-24 11L8 25Z' fill='%23000'/%3E%3Cpath d='M17 33v10c8 6 22 6 30 0V33l-15 7-15-7Z' fill='%23000'/%3E%3Cpath d='M52 27v14' stroke='%23000' stroke-width='3'/%3E%3Ccircle cx='52' cy='44' r='2.5' fill='%23000'/%3E%3C/svg%3E" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xiaoyang Zhang","alternateName":["Zhang Xiaoyang","zhangxiaoyang"],"url":"https://zhangstu.github.io/","jobTitle":"Research Scientist","affiliation":{"@type":"Organization","name":"Nanyang Technological University"},"alumniOf":[{"@type":"Organization","name":"The Hong Kong Polytechnic University"},{"@type":"Organization","name":"Polytechnic University of Turin"},{"@type":"Organization","name":"Xi'an Jiaotong University"}],"email":"xiaoyang.zhang@connect.polyu.hk","knowsAbout":["Sustainable Computing","Carbon-efficient Computing","Sustainable AI","Carbon Accounting"]}</script>
+    <style>
+      :root { --navy: #35455d; --ink: #252a31; --blue: #063f99; --red: #ad312d; --line: #e1e3e6; --paper: #fff; --muted: #5f6773; }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.58 Arial, Helvetica, sans-serif; }
+      a { color: var(--blue); font-weight: 700; text-decoration: none; }
+      a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      .site-header { background: var(--navy); color: #f8f9fb; }
+      .nav-shell { max-width: 1122px; min-height: 78px; margin: 0 auto; padding: 0 36px; display: flex; align-items: center; justify-content: space-between; gap: 34px; }
+      .brand { margin: 0; color: #f8f9fb; font-size: clamp(1.65rem, 2.1vw, 2.2rem); font-weight: 400; letter-spacing: -.03em; white-space: nowrap; }
+      .brand a { color: inherit; font-weight: inherit; }
+      .brand strong { font-weight: 700; }
+      nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 30px; }
+      nav a { color: #f8f9fb; font-size: 1.16rem; font-weight: 400; }
+      nav a:first-child, nav a:hover { color: #cf4a43; text-decoration: none; }
+      .content { width: min(100% - 144px, 1050px); margin: 0 auto; padding: 52px 0 78px; }
+      .intro { padding: 8px 0 48px; border-bottom: 2px solid var(--line); }
+      .intro-copy { max-width: none; }
+      h1:not(.brand) { margin: 0 0 12px; color: var(--ink); font-size: clamp(2rem, 3vw, 2.85rem); line-height: 1.1; letter-spacing: -.035em; }
+      .role { margin: 0 0 22px; font-size: 1.05rem; color: var(--muted); }
+      .intro p { margin: 0; font-size: clamp(1.06rem, 1.35vw, 1.22rem); line-height: 1.62; }
+      .contact { margin-top: 28px; font-size: 1.05rem; }
+      .contact span { font-weight: 700; }
+      .contact .scholar { display: block; margin-top: 8px; }
+      section { scroll-margin-top: 30px; padding: 27px 0 29px; border-bottom: 2px solid var(--line); }
+      h2 { margin: 0 0 17px; color: var(--red); font-size: clamp(1.5rem, 2vw, 1.95rem); line-height: 1.15; letter-spacing: -.025em; }
+      .news, .service { margin: 0; padding-left: 29px; }
+      .news li, .service li { margin: 10px 0; padding-left: 8px; }
+      .date { display: inline-block; min-width: 95px; color: var(--muted); font-weight: 700; }
+      .interests { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+      .interests li { border: 1px solid #bdc6d2; border-radius: 3px; padding: 6px 11px; color: #39485c; font-size: .98rem; }
+      .authorship { margin: -4px 0 18px; color: var(--muted); font-size: .92rem; }
+      .pub-list { margin: 0; padding-left: 32px; }
+      .pub-list li { margin: 0 0 16px; padding-left: 5px; line-height: 1.58; }
+      .venue { color: var(--blue); font-weight: 700; }
+      .paper-note { margin-left: .25em; color: var(--muted); font-size: .72em; font-style: italic; font-weight: 400; white-space: nowrap; }
+      .oral { color: var(--red); font-weight: 700; }
+      sup { color: var(--red); font-size: .75em; font-weight: 700; }
+      footer { padding-top: 25px; color: var(--muted); font-size: .92rem; }
+      @media (max-width: 900px) { .nav-shell { min-height: auto; padding: 22px 24px; align-items: flex-start; flex-direction: column; gap: 15px; } nav { justify-content: flex-start; gap: 12px 22px; } nav a { font-size: 1.05rem; } .content { width: min(100% - 48px, 1350px); padding-top: 42px; } }
+      @media (max-width: 560px) { body { font-size: 16px; } .nav-shell { padding: 19px 21px; } .content { width: min(100% - 42px, 1660px); padding: 30px 0 55px; } .intro { padding: 0 0 38px; } .intro p { font-size: 1.08rem; } .date { min-width: 0; margin-right: 8px; } .news, .service, .pub-list { padding-left: 23px; } }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-shell">
+        <h1 class="brand"><a href="#about"><strong>Xiaoyang</strong> Zhang</a></h1>
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#service">Service</a>
+        </nav>
+      </div>
+    </header>
     <main class="content">
-      <header class="page-header" id="home">
-        <h1 id="name"></h1>
+      <header class="intro" id="about">
+        <div class="intro-copy">
+          <h2>About me</h2>
+          <p class="role">Research Scientist · Nanyang Technological University</p>
+          <p>I am a Research Scientist at Nanyang Technological University, supervised by Prof. Yonggang Wen. I was a postdoctoral fellow at Hong Kong Polytechnic University in 2026. I received my Ph.D. in Computing from The Hong Kong Polytechnic University in January 2026, supervised by Prof. Dan Wang. I also hold a master's degree from the Polytechnic University of Turin and a bachelor's degree from Xi'an Jiaotong University. My research lies at the intersection of sustainable computing, carbon-aware computing, and AI for energy and sustainability. Before my PhD, I worked as an Algorithm Engineer at Huawei and ICBC SDC.</p>
+          <div class="contact"><span>Get in touch</span> <a href="mailto:xiaoyang.zhang@connect.polyu.hk">xiaoyang.zhang@connect.polyu.hk</a><a class="scholar" href="https://scholar.google.com/citations?user=l79IZEoAAAAJ&amp;hl=zh-CN&amp;oi=ao" target="_blank" rel="noopener noreferrer">[Google Scholar]</a></div>
+        </div>
       </header>
-
-      <section class="profile-row">
-        <div class="photo-box">
-          <img id="profile-photo" class="profile-photo" alt="Profile photo">
-        </div>
-        <div class="profile-main">
-          <p class="position-line" id="position-line"></p>
-          <p class="affiliation-line" id="affiliation-line"></p>
-          <p id="address-line"></p>
-          <div id="contact-inline"></div>
-        </div>
+      <section id="news" aria-labelledby="news-heading">
+        <h2 id="news-heading">Recent news</h2>
+        <ul class="news"><li><span class="date">2026</span>Joined Nanyang Technological University (NTU) as a Research Scientist.</li><li><span class="date">2026</span>One corresponding-author paper accepted by IEEE Transactions on Dependable and Secure Computing.</li><li><span class="date">2026</span>Two first-author papers accepted by The ACM Web Conference 2026. One is selected as oral paper.</li><li><span class="date">2025</span>First-author work accepted by NeurIPS 2025 and IEEE Transactions on Computers.</li></ul>
       </section>
-
-      <section class="section" id="about">
-        <h2>About me</h2>
-        <div id="about-paragraphs"></div>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <ul class="interests"><li>Sustainable Computing</li><li>Carbon-efficient Computing</li><li>Sustainable AI</li><li>Carbon Accounting</li><li>Carbon Intensity Forecasting</li><li>Graph Neural Networks</li></ul>
       </section>
-
-      <section class="section" id="news">
-        <h2>Recent News</h2>
-        <ul id="news-list"></ul>
+      <section id="publications" aria-labelledby="pub-heading">
+        <h2 id="pub-heading">Selected publications</h2>
+        <p class="authorship"><strong>First/Corresponding author</strong></p>
+        <ol class="pub-list">
+            <li><strong>Xiaoyang Zhang</strong>, Taiqi Zhou, Fang He, Yang Deng, and Dan Wang. “Toward Green Computing: General Carbon Intensity Forecasting via Dual Graph Empowered Time Series Foundation Model.” <span class="venue">The ACM Web Conference (WWW), 2026.</span> <span class="paper-note">(CCF-A)</span></li>
+            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied and Operational Carbon Footprint.” <span class="venue">The ACM Web Conference (WWW), <span class="oral">oral</span>, 2026.</span> <span class="paper-note">(CCF-A)</span></li>
+            <li><strong>Xiaoyang Zhang</strong>, Fang He, Yang Deng, and Dan Wang. “Unveiling the Uncertainty in Embodied and Operational Carbon of Large AI Models through a Probabilistic Carbon Accounting Model.” <span class="venue">NeurIPS, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
+            <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-Temporal Embodied Carbon Models with Dual Carbon Attribution for Embodied Carbon Accounting of Computer Systems.” <span class="venue">IEEE Transactions on Computers, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
+            <li>Fang He, <strong>Xiaoyang Zhang</strong><sup>*</sup>, Y. Tao, and J. Yuan. “FLCarbon: A Close Look Into the Operational Carbon and Embodied Carbon of Federated Learning.” <span class="venue">IEEE Transactions on Dependable and Secure Computing, 2026.</span> <span class="paper-note">(CCF-A)</span></li>
+            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A Node-aware Graph Neural Network-based Carbon Intensity Forecasting Model for Cross-border Power Grids.” <span class="venue">Computers in Industry, 180, 104516.</span> <span class="paper-note">(CAS Tier 1 Top Journal)</span></li>
+            <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-temporal Embodied Carbon Models for the Embodied Carbon Accounting of Computer Systems.” <span class="venue">ACM e-Energy, 2024.</span></li>
+            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A GNN-based Day Ahead Carbon Intensity Forecasting Model for Cross-Border Power Grids.” <span class="venue">ACM e-Energy, 2023.</span></li>
+        </ol>
       </section>
-
-      <section class="section" id="research">
-        <h2>Research</h2>
-        <h3>Research interests</h3>
-        <ul id="research-list"></ul>
+      <section id="service" aria-labelledby="service-heading">
+        <h2 id="service-heading">Academic service</h2>
+        <ul class="service"><li>Program Committee Member, The ACM Web Conference 2026, Web for Good Track</li><li>Program Committee Member, WESys Workshop at ACM BuildSys 2025</li></ul>
       </section>
-
-      <section class="section" id="publications">
-        <h2>Recent Publications</h2>
-        <h3>First-author publications</h3>
-        <ol id="first-author-list"></ol>
-        <h3>Co-author publications</h3>
-        <ol id="coauthor-list"></ol>
-      </section>
-
-      <section class="section" id="service">
-        <h2>Academic service</h2>
-        <ul id="service-list"></ul>
-      </section>
-
-      <section class="section" id="experience">
-        <h2>Work experience</h2>
-        <ul id="experience-list"></ul>
-      </section>
-
-      <section class="section" id="education">
-        <h2>Education</h2>
-        <ul id="education-list"></ul>
-      </section>
-
-      <footer class="site-footer">
-        <p>Last updated <span id="last-updated"></span></p>
-      </footer>
+      <footer>© 2026 Xiaoyang Zhang · Last updated September 2026</footer>
     </main>
-  </div>
-
-  <script src="./content.js"></script>
-  <script src="./script.js"></script>
-</body>
+  </body>
 </html>
