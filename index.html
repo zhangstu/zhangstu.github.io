@@ -44,6 +44,9 @@
       .authorship { margin: -4px 0 18px; color: var(--muted); font-size: .92rem; }
       .pub-list { margin: 0; padding-left: 32px; }
       .pub-list li { margin: 0 0 16px; padding-left: 5px; line-height: 1.58; }
+      .pub-category { margin: 25px 0 12px; color: var(--red); font-size: 1.12rem; line-height: 1.25; }
+      .pub-category-list { list-style: none; padding-left: 0; }
+      .pub-category-list li { padding-left: 0; }
       .venue { color: var(--blue); font-weight: 700; }
       .paper-note { margin-left: .25em; color: var(--muted); font-size: .72em; font-style: italic; font-weight: 400; white-space: nowrap; }
       .oral { color: var(--red); font-weight: 700; }
@@ -82,16 +85,24 @@
       <section id="publications" aria-labelledby="pub-heading">
         <h2 id="pub-heading">Selected publications</h2>
         <p class="authorship"><strong>First/Corresponding author</strong></p>
-        <ol class="pub-list">
-            <li><strong>Xiaoyang Zhang</strong>, Taiqi Zhou, Fang He, Yang Deng, and Dan Wang. “Toward Green Computing: General Carbon Intensity Forecasting via Dual Graph Empowered Time Series Foundation Model.” <span class="venue">The ACM Web Conference (WWW), 2026.</span> <span class="paper-note">(CCF-A)</span></li>
-            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied and Operational Carbon Footprint.” <span class="venue">The ACM Web Conference (WWW), <span class="oral">oral</span>, 2026.</span> <span class="paper-note">(CCF-A)</span></li>
-            <li><strong>Xiaoyang Zhang</strong>, Fang He, Yang Deng, and Dan Wang. “Unveiling the Uncertainty in Embodied and Operational Carbon of Large AI Models through a Probabilistic Carbon Accounting Model.” <span class="venue">NeurIPS, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
-            <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-Temporal Embodied Carbon Models with Dual Carbon Attribution for Embodied Carbon Accounting of Computer Systems.” <span class="venue">IEEE Transactions on Computers, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
-            <li>Fang He, <strong>Xiaoyang Zhang</strong><sup>*</sup>, Y. Tao, and J. Yuan. “FLCarbon: A Close Look Into the Operational Carbon and Embodied Carbon of Federated Learning.” <span class="venue">IEEE Transactions on Dependable and Secure Computing, 2026.</span> <span class="paper-note">(CCF-A) sole corresponding author*</span></li>
-            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A Node-aware Graph Neural Network-based Carbon Intensity Forecasting Model for Cross-border Power Grids.” <span class="venue">Computers in Industry, 180, 104516.</span> <span class="paper-note">(CAS Tier 1 Top Journal)</span></li>
-            <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-temporal Embodied Carbon Models for the Embodied Carbon Accounting of Computer Systems.” <span class="venue">ACM e-Energy, 2024.</span></li>
-            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A GNN-based Day Ahead Carbon Intensity Forecasting Model for Cross-Border Power Grids.” <span class="venue">ACM e-Energy, 2023.</span></li>
-        </ol>
+        <h3 class="pub-category">1. Sustainable Computer Systems</h3>
+        <ul class="pub-list pub-category-list">
+          <li><strong class="pub-label">[TC]</strong> <strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-Temporal Embodied Carbon Models with Dual Carbon Attribution for Embodied Carbon Accounting of Computer Systems.” <span class="venue">IEEE Transactions on Computers, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
+          <li><strong class="pub-label">[ACM e-Energy 2024]</strong> <strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-temporal Embodied Carbon Models for the Embodied Carbon Accounting of Computer Systems.” <span class="venue">ACM e-Energy, 2024.</span></li>
+          <li><strong class="pub-label">[ACM BuildSys 2024]</strong> <strong>Xiaoyang Zhang</strong> et al. “Poster: CarbonReveal: Embodied Carbon Accounting with Retrieval-Augmented LLM for Computer Systems.” <span class="venue">ACM BuildSys, 2024.</span></li>
+        </ul>
+        <h3 class="pub-category">2. Sustainable AI</h3>
+        <ul class="pub-list pub-category-list">
+          <li><strong class="pub-label">[NeurIPS 2025]</strong> <strong>Xiaoyang Zhang</strong>, Fang He, Yang Deng, and Dan Wang. “Unveiling the Uncertainty in Embodied and Operational Carbon of Large AI Models through a Probabilistic Carbon Accounting Model.” <span class="venue">NeurIPS, 2025.</span> <span class="paper-note">(CCF-A)</span></li>
+          <li><strong class="pub-label">[WWW 2026]</strong> <strong>Xiaoyang Zhang</strong> and Dan Wang. “Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied and Operational Carbon Footprint.” <span class="venue">The ACM Web Conference (WWW), <span class="oral">oral</span>, 2026.</span> <span class="paper-note">(CCF-A)</span></li>
+          <li><strong class="pub-label">[TDSC]</strong> Fang He, <strong>Xiaoyang Zhang</strong><sup>*</sup>, Y. Tao, and J. Yuan. “FLCarbon: A Close Look Into the Operational Carbon and Embodied Carbon of Federated Learning.” <span class="venue">IEEE Transactions on Dependable and Secure Computing, 2026.</span> <span class="paper-note">(CCF-A) sole corresponding author*</span></li>
+        </ul>
+        <h3 class="pub-category">3. AI for Sustainable Energy</h3>
+        <ul class="pub-list pub-category-list">
+          <li><strong class="pub-label">[WWW 2026]</strong> <strong>Xiaoyang Zhang</strong>, Taiqi Zhou, Fang He, Yang Deng, and Dan Wang. “Toward Green Computing: General Carbon Intensity Forecasting via Dual Graph Empowered Time Series Foundation Model.” <span class="venue">The ACM Web Conference (WWW), 2026.</span> <span class="paper-note">(CCF-A)</span></li>
+          <li><strong class="pub-label">[CII]</strong> <strong>Xiaoyang Zhang</strong> and Dan Wang. “A Node-aware Graph Neural Network-based Carbon Intensity Forecasting Model for Cross-border Power Grids.” <span class="venue">Computers in Industry, 180, 104516.</span> <span class="paper-note">(中科院Q1)</span></li>
+          <li><strong class="pub-label">[ACM e-Energy 2023]</strong> <strong>Xiaoyang Zhang</strong> and Dan Wang. “A GNN-based Day Ahead Carbon Intensity Forecasting Model for Cross-border Power Grids.” <span class="venue">ACM e-Energy, 2023.</span></li>
+        </ul>
       </section>
       <section id="service" aria-labelledby="service-heading">
         <h2 id="service-heading">Academic service</h2>
